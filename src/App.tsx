@@ -5,9 +5,11 @@ import Cadastro from './pages/Cadastro'
 import Dashboard from './pages/Dashboard'
 import { PrivateRoute } from './routes/PrivateRoute'
 import Reclamacao from './pages/ReclamacaoForm'
+import { ComplaintsProvider } from './context/ReclamacoesContextType'
 
 export default function App() {
   return (
+    <ComplaintsProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
@@ -27,5 +29,6 @@ export default function App() {
         <Route path="*" element={<Login />} />
       </Routes>
     </BrowserRouter>
+    </ComplaintsProvider>
   )
 }
