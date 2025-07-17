@@ -4,7 +4,7 @@ Este é o front-end do sistema **Ouvidoria Digital**, desenvolvido com **React +
 
 ## ⚙️ Tecnologias utilizadas
 
-- **React 18**
+- **React**
 - **TypeScript**
 - **Vite**
 - **MUI (Material UI)**
